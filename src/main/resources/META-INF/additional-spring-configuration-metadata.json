@@ -1,0 +1,48 @@
+{
+  "properties": [
+    {
+      "name": "metric.kafka.enabled",
+      "type": "java.lang.String",
+      "description": "Description for metric.kafka.enabled."
+    },
+    {
+      "name": "metric.db.enabled",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.enabled."
+    },
+    {
+      "name": "metric.db.datasource.url",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.datasource.url."
+    },
+    {
+      "name": "metric.db.datasource.username",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.datasource.username."
+    },
+    {
+      "name": "metric.db.datasource.password",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.datasource.password."
+    },
+    {
+      "name": "metric.db.datasource.driverClassName",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.datasource.driverClassName."
+    },
+    {
+      "name": "metric.db.liquibase.enabled",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.liquibase.enabled."
+    },
+    {
+      "name": "metric.db.liquibase.change-log",
+      "type": "java.lang.String",
+      "description": "Description for metric.db.liquibase.change-log."
+    },
+    {
+      "name": "metric.kafka.bootstrap.server",
+      "type": "java.lang.String",
+      "description": "Description for metric.kafka.bootstrap.server."
+    }
+  ] }

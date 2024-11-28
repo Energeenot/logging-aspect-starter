@@ -1,0 +1,18 @@
+spring:
+    application:
+        name: logging-aspect-starter
+metric:
+    kafka:
+        enabled: ${TRACK_KAFKA_LOG_ENABLED:false}
+        bootstrap:
+            server: localhost:9092
+    db:
+        enabled: ${TRACK_DB_LOG_ENABLED:false}
+        datasource:
+            url: ${spring.datasource.jdbcUrl}
+            username: ${spring.datasource.username}
+            password: ${spring.datasource.password}
+            driverClassName: ${spring.datasource.driverClassName}
+        liquibase:
+            enabled: true
+            change-log: db/changelog/db.changelog-master.xml
