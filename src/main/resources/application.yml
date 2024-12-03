@@ -2,6 +2,8 @@ spring:
     application:
         name: logging-aspect-starter
 metric:
+    jpa-repositories:
+        enabled: true
     kafka:
         enabled: ${TRACK_KAFKA_LOG_ENABLED:false}
         bootstrap:
