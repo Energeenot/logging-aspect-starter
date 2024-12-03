@@ -44,5 +44,10 @@
       "name": "metric.kafka.bootstrap.server",
       "type": "java.lang.String",
       "description": "Description for metric.kafka.bootstrap.server."
+    },
+    {
+      "name": "metric.jpa-repositories.enabled",
+      "type": "java.lang.String",
+      "description": "Description for metric..jpa-repositories.enabled."
     }
   ] }
