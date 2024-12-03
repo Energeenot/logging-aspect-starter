@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>ru.Energeenot</groupId>
 	<artifactId>logging-aspect-starter</artifactId>
-	<version>0.0.1</version>
+	<version>0.1.0</version>
 	<name>logging-aspect-starter</name>
 	<description>starter with aspects</description>
 	<properties>
