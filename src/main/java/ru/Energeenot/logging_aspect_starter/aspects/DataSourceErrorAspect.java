@@ -31,7 +31,7 @@ public class DataSourceErrorAspect {
         this.metricProducer = metricProducer;
     }
 
-    @Pointcut("within(ru.*)")
+    @Pointcut("@annotation(ru.Energeenot.logging_aspect_starter.annotations.LogDataSourceError)")
     public void logDataSourceError() {}
 
     @AfterThrowing(pointcut = "logDataSourceError()", throwing = "ex")
