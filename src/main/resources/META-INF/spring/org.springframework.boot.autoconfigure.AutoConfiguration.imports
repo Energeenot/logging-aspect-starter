@@ -1,2 +1,4 @@
-ru.Energeenot.logging_aspect_starter.config.AspectsConfig
 ru.Energeenot.logging_aspect_starter.config.TrackingKafkaConfig
+ru.Energeenot.logging_aspect_starter.config.DatabaseSchemaConfig
+ru.Energeenot.logging_aspect_starter.config.AspectsConfig
+ru.Energeenot.logging_aspect_starter.config.StarterJpaAutoConfig
