@@ -5,6 +5,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -17,6 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
+@EnableConfigurationProperties
 public class TrackingKafkaConfig {
 
     @Value("${metric.kafka.bootstrap.server}")
@@ -43,7 +45,7 @@ public class TrackingKafkaConfig {
 
     }
 
-    @Bean
+    @Bean(name = "metricProducer")
     @ConditionalOnProperty(value = "kafka.enabled",
             havingValue = "true",
             matchIfMissing = true)
